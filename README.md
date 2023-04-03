@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-<a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/charkrios/charkrios/blob/main/devcard.svg" width="200" alt="Charlie Rios Dev Card"/></a>
+<a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/xarlyzard/xarlyzard/blob/main/devcard.svg" width="200" alt="Charlie Rios Dev Card"/></a>
 
 <!--
-**charkrios/charkrios** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**xarlyzard/xarlyzard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
