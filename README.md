@@ -24,10 +24,22 @@ class Attributes(Xarlyzard):
 		langs = {
 			'expert':   ['js', 'java'],
 			'intermediate': ['solidity', 'html', 'css', 'python'],
-			'learning': ['c', 'c++', 'c#', '', 'java']
+			'learning': ['c', 'c++', 'c#']
 		}
 		specialities  = ['SystemAdministrator', 'fullstack']
 		environnement = ['vscode', 'pycharm']
 		
 		return langs, specialities, environnement
     ```
+
+<h2 align="center">Skills </h2>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ableton,java,python,vscode,androidstudio,wordpress,html,css,js,css,react,discord,bots,docker,aws,gcp,linux,arduino" />
+  </a>
+</p>
+
+<p href="https://discord.gg/onlp" align="center">
+    <img alt="" src="https://github-readme-stats.vercel.app/api?username=xarlyzard&theme=tokyonight&show_icons=true">
+</p>
