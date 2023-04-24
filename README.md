@@ -1,5 +1,3 @@
-### Hi there 👋
-
 <a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/xarlyzard/xarlyzard/blob/main/devcard.svg" width="200" alt="Charlie Rios Dev Card"/></a>
 
 ```python
