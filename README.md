@@ -2,17 +2,32 @@
 
 <a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/xarlyzard/xarlyzard/blob/main/devcard.svg" width="200" alt="Charlie Rios Dev Card"/></a>
 
-<!--
-**xarlyzard/xarlyzard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```python
+class Attributes(Xarlyzard):
+	@staticmethod
+	def contact() -> tuple:
+	    discord  = "xarlyzard#6330"
+	    twitter = "@Xarlyzard"
+	    
+	    return discord, twitter
+	
+	@staticmethod
+	def life() -> tuple:
+		langs         = ['Catalan', 'Spanish', 'English']
+		nationalities = self.langs.remove('English')
+		age           = 24
+		
+		return langs, nationalities, age
+	
+	@staticmethod
+	def coding() -> tuple:
+		langs = {
+			'expert':   ['js', 'java'],
+			'intermediate': ['solidity', 'html', 'css', 'python'],
+			'learning': ['c', 'c++', 'c#', '', 'java']
+		}
+		specialities  = ['SystemAdministrator', 'fullstack']
+		environnement = ['vscode', 'pycharm']
+		
+		return langs, specialities, environnement
+    ```
