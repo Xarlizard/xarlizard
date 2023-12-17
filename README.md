@@ -5,7 +5,7 @@ class Attributes(Xarlyzard):
 	@staticmethod
 	def contact() -> tuple:
 	    discord  = "xarlizard"
-	    twitter = "@Xarlyzard"
+	    twitter = "@Xarlizard"
 	    
 	    return discord, twitter
 	
