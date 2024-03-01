@@ -1,4 +1,4 @@
-<a href="https://app.daily.dev/xarlyzard"><img src="https://github.com/xarlyzard/xarlyzard/blob/main/devcard.svg" width="200" alt="Charlie Rios Dev Card"/></a>
+<a href="https://app.daily.dev/xarlizard"><img src="https://api.daily.dev/devcards/v2/zBTy9O8K7X1rvK8oIpUlv.png?r=6q5" width="356" alt="Charlie's Dev Card"/></a>
 
 ```python
 class Attributes(Xarlyzard):
