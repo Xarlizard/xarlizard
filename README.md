@@ -12,20 +12,20 @@ class Attributes(Xarlyzard):
 	@staticmethod
 	def life() -> tuple:
 		langs         = ['Catalan', 'Spanish', 'English']
-		nationalities = self.langs.remove('English')
-		age           = 24
+		nationalities = self.langs.remove('Catalan', 'English')
+		age           = 25
 		
 		return langs, nationalities, age
 	
 	@staticmethod
 	def coding() -> tuple:
 		langs = {
-			'expert':   ['js', 'java'],
-			'intermediate': ['solidity', 'html', 'css', 'python'],
-			'learning': ['c', 'c++', 'c#']
+			'expert':   ['js', 'html', 'css'],
+			'intermediate': ['solidity', 'java', 'python'],
+			'learning': ['c', 'c++', 'c#', 'django', 'go']
 		}
-		specialities  = ['SystemAdministrator', 'fullstack']
-		environnement = ['vscode', 'pycharm']
+		specialities  = ['SysAdmin', 'Fullstack', 'Blockchain']
+		environnement = ['vscode', 'pycharm', 'Linux']
 		
 		return langs, specialities, environnement
 		
