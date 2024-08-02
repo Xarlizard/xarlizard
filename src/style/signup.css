@@ -48,7 +48,7 @@ body{
                 li{
                     padding-left: 10px;
                     padding-bottom: 10px;
-                    list-style-image: url('./assets/images/icon-list.svg');
+                    list-style-image: url('./src/images/icon-list.svg');
                 }
             }
             h3{
@@ -126,7 +126,7 @@ body{
         .first{
             flex-direction: row-reverse;
             .mobileImg{
-                content: url("./assets/images/illustration-sign-up-desktop.svg");
+                content: url("./src/images/illustration-sign-up-desktop.svg");
             }
         }
         .second{
