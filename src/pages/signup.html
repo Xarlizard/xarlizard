@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet" href="../style/signup.css">
+  <title>Contact Charlie</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+        <!-- Sign-up form start -->
+      <div class="first">
+        <img class="mobileImg" src="../images/illustration-sign-up-mobile.svg" alt="mobileImage">
+        <div class="firstText">
+          <h1>Get in contact!!</h1>
+
+          <text>Share your address if you are in need of one of the following digital services:</text>
+          <ul>
+           <li>Website Design/Development/Hosting</li>
+            <li>Social Media Marketing / Ad(s) Camapigns</li>
+            <li>eCommerce Digital Services Consultory</li>
+          </ul>
+          <h3>Email address</h3>
+          <form id="emailForm">
+          <input type="email" id="email" name="email" placeholder="email@company.com"></input>
+          
+          <input type="submit" id="submit" value="Share email address"></button>
+          </form>
+        </div>
+      </div>
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+      <div class="second">
+        <img src="../images/icon-success.svg" alt="icon-success">
+        <h1>Thanks for subscribing!</h1>
+
+        <text>A confirmation email has been sent to <span id="emailValue"></span>. Please open it and click the button inside to confirm your subscription.</text>
+
+        <button>Dismiss message</button>
+      </div>
+        <!-- Success message end -->
+    </div>
+    <br>
+    <div class="attribution">
+      Coded by <a href="#">xarlizard</a>.
+    </div>
+  </main>
+  <script src="../scripts/signup.js"></script>
+</body>
+</html>
