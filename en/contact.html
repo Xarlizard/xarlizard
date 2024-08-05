@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./src_signup/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src_contact/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
-  <link rel="stylesheet" href="./src_signup/css/signup.css">
+  <link rel="stylesheet" href="./src_contact/css/contact.css">
   <title>Contact Charlie</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="container">
         <!-- Sign-up form start -->
       <div class="first">
-        <img class="mobileImg" src="./src_signup/images/illustration-sign-up-mobile.svg" alt="mobileImage">
+        <img class="mobileImg" src="./src_contact/images/illustration-sign-up-mobile.svg" alt="mobileImage">
         <div class="firstText">
           <h1>Get in contact!!</h1>
 
@@ -23,11 +23,21 @@
             <li>Social Media Marketing / Ad(s) Camapigns</li>
             <li>eCommerce Digital Services Consultory</li>
           </ul>
-          <h3>Email address</h3>
-          <form id="emailForm">
-          <input type="email" id="email" name="email" placeholder="email@company.com"></input>
-          
-          <input type="submit" id="submit" value="Share email address"></button>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form id="emailForm"
+            method="POST"
+            action="https://formspree.io/f/mpwadnny"
+            Your message:
+          >
+          <label>
+            Tu email:
+            <input type="email" id="email" name="email" placeholder="contacto@empresa.com">
+          </label>
+          <label>
+            <textarea name="message" id="message" placeholder="Escribe aqui tu consulta"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" type="submit" id="submit">Contactar</button>
           </form>
         </div>
       </div>
@@ -35,7 +45,7 @@
 
         <!-- Success message start -->
       <div class="second">
-        <img src="./src_signup/images/icon-success.svg" alt="icon-success">
+        <img src="./src_contact/images/icon-success.svg" alt="icon-success">
         <h1>Thanks for subscribing!</h1>
 
         <text>A confirmation email has been sent to <span id="emailValue"></span>. Please open it and click the button inside to confirm your subscription.</text>
@@ -49,6 +59,6 @@
       Coded by <a href="#">xarlizard</a>.
     </div>
   </main>
-  <script src="./src_signup/js/signup.js"></script>
+  <script src="./src_contact/js/signup.js"></script>
 </body>
 </html>
