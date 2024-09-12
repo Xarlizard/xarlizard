@@ -1,0 +1,298 @@
+:root{
+    /* COLORS*/
+    --Lime_Green: hsl(163, 72%, 41%);
+    --Bright_Red: hsl(356, 69%, 56%);
+    --Blue: hsl(208, 92%, 53%);
+    --Light_Blue: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --Red: hsl(348, 97%, 39%);
+}
+.theme-light {
+    --bg: hsl(0, 0%, 100%);
+    --top_bg_pattern: hsl(225, 100%, 98%);
+    --card_bg: hsl(227, 47%, 96%);
+    --card_bg_hover: hsl(223, 11%, 87%);
+    --text: hsl(228, 12%, 44%);
+    --text2: hsl(230, 17%, 14%);
+    --slider_color: linear-gradient(hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+    --inverted_slider: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.theme-dark {
+    --bg: hsl(230, 17%, 14%);
+    --top_bg_pattern: hsl(232, 19%, 15%);
+    --card_bg: hsl(228, 28%, 20%);
+    --card_bg_hover: hsl(230, 21%, 29%);
+    --text: hsl(228, 34%, 66%);
+    --text2: hsl(0, 0%, 100%);
+    --slider_color: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --inverted_slider:linear-gradient(hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter';
+}
+.switch {
+    width: 60px;
+    height: 34px;
+    position: relative;
+    display: inline-block;
+}
+.switch input { 
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 34px; 
+    background-image: var(--slider_color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%; 
+    background-color: var(--bg);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:focus + .slider { box-shadow: 0 0 1px hsl(230, 22%, 74%);}
+.slider:hover{background-image: var(--inverted_slider);}
+input:focus + .slider:hover {background-image: var(--inverted_slider);}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+body{
+    padding: 20px;
+    color: var(--text);
+    background-color: var(--bg);
+}
+header{
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    max-width: 1200px;
+    flex-direction: column;
+}
+.topHeader{
+    display: flex;
+    flex-direction: column;
+}
+.topHeader h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text2);
+}
+.topHeader text{
+    font-weight: 700;
+    color: var(--text);
+}
+hr{
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:0.5px solid var(--text);
+}
+.bottomHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottomHeader text{
+    font-weight: 700;
+}
+.container{
+    gap: 30px;
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+}
+.row{
+    flex: 1 1 0;
+    gap: 20px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.blue{
+    border-top: 5px solid var(--Blue);
+}
+.light_blue{
+    border-top: 5px solid var(--Light_Blue);
+}
+.instagram {
+    position: relative;
+    border: 5px solid transparent;              /* transparent border to reserve space for the gradient */
+    border-radius: 10px;
+}
+.instagram::before {
+    top: -5px;                                  /* offset to cover the top border */
+    left: -5px;                                 /* offset to cover the top border */
+    right: -5px;                                /* offset to cover the top border */
+    height: 5px;                                /* height of the top border */
+    content: "";
+    position: absolute;
+    background: var(--Instagram);
+    border-radius: 10px 10px 0 0;               /* applying border-radius to the top */
+}
+.redd{
+    border-top: 5px solid var(--Red);
+}
+.containerTop .row .card{  
+    align-items: center;
+}
+.row .card{
+    flex: 1 1 0;
+    display: flex;
+    padding: 20px;
+    border-radius: 3px;
+    flex-direction: column;
+    background-color: var(--card_bg);
+}
+.row .card .username{
+    gap: 8px;
+    display: flex;
+    font-weight: 700;
+    flex-direction: row;
+    align-items: center;
+}
+.row .card .preview{
+    margin: 0 auto;
+    overflow: hidden; /* Removing this will break the effects */
+    
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        transform-origin: 50% 70%; 
+        transition: transform 1s, filter .5s ease-out;
+    }
+}
+.row .card .preview img:hover {
+    transform: scale(2.5);
+  }
+.row .card h1{
+    margin-top: 15px;
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--text2);
+}
+.card:hover{
+    cursor: pointer;
+    background-color: var(--card_bg_hover);
+}
+.followers{
+    letter-spacing: 5px;
+}
+.row .card .value{
+    margin-top: 25px;
+}
+.value{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.value text{
+    font-weight: 700;
+}
+.green{
+    color: var(--Lime_Green);
+}
+
+.red{
+    color: var(--Bright_Red);
+}
+.overview{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 30px;
+    color: var(--text2);
+}
+.containerBottom{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+.bigRow .row .card{
+    gap: 30px;
+}
+.card .info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.card .info text{
+    font-weight: 700;
+}
+.card .values{
+    display: flex;
+    max-width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.values h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text2);
+}
+.values img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: var(--Blue); }
+.attribution a:hover{ color: var(--text2);}
+@media only screen and (min-width:600px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .topHeader h1{
+        font-size: 33px;
+    }
+    .bottomHeader{
+        gap: 20px;
+    }
+    hr{
+        display: none;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .container{
+        gap: 0;
+    }
+    .overview{
+        padding-top: 30px;
+    }
+}
+@media only screen and (min-width:1100px) {
+    .containerTop{
+        gap: 20px;
+        display: flex;
+        max-width: 100%;
+        flex-direction: row;
+    }
+    .bigRow{
+        gap: 20px;
+        display: flex;
+    }
+}
