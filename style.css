@@ -89,6 +89,9 @@ header{
     max-width: 1200px;
     flex-direction: column;
 }
+.avatar img{
+    max-width: 90px;
+    border-radius: 50%;}
 .topHeader{
     display: flex;
     flex-direction: column;
@@ -236,11 +239,15 @@ hr{
 .card .info{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 .card .info text{
     font-weight: 700;
+}
+.card .info img{
+    max-width: 90px;
+    max-height: 30px;
 }
 .card .values{
     display: flex;
