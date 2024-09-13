@@ -16,6 +16,6 @@ function toggleTheme() {
    if (localStorage.getItem('theme') === 'theme-light') {
        setTheme('theme-light');
    } else {
-       setTheme('theme-dark');
+       setTheme('theme-light');
    }
 })();

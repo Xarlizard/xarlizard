@@ -94,7 +94,9 @@ header{
     border-radius: 50%;}
 .topHeader{
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
 }
 .topHeader h1{
     font-size: 25px;
@@ -160,6 +162,7 @@ hr{
 }
 .containerTop .row .card{  
     align-items: center;
+    justify-content: space-between;
 }
 .row .card{
     flex: 1 1 0;
@@ -169,12 +172,17 @@ hr{
     flex-direction: column;
     background-color: var(--card_bg);
 }
-.row .card .username{
+.row .card .title{
     gap: 8px;
+    padding-bottom: 10px;
     display: flex;
     font-weight: 700;
     flex-direction: row;
     align-items: center;
+    img{
+        max-width: 25px;
+        max-height: 25px;
+    }
 }
 .row .card .preview{
     margin: 0 auto;
@@ -200,7 +208,7 @@ hr{
     cursor: pointer;
     background-color: var(--card_bg_hover);
 }
-.followers{
+.subtitle{
     letter-spacing: 5px;
 }
 .row .card .value{

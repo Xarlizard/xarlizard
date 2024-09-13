@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   <title>Portfolio</title>
 </head>
 <body>
   <header>
     <div class="topHeader">
-      <div class="avatar"><img src="./images/avatar_img.jpeg"></div>
-      <h1>Charlie - Fullstack Web 3.0 Developer & UI/UX Designer</h1>
-      <text class="headerText">@xarlizard</text>
+      <div class="avatar"><img src="./src/images/avatar_img.jpeg"></div>
+      <div class="headerInfo">
+        <h1>Charlie - @xarlizard</h1>
+        <text class="headerText">Fullstack Web 3.0 Developer & UI/UX Designer</text>
+      </div>
     </div>
     <hr>
     <div class="bottomHeader">
@@ -25,85 +27,85 @@
         <span class="slider round"></span>
       </label>
     </div>
-    <script src="./script.js"></script>
+    <script src="./src/js/script.js"></script>
   </header>
   <main>
     <div class="container">
       <div class="containerTop">
         <div class="row">
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Interior Design Site</div>
-            <div class="preview"> <img src="./images/preview_interior.png" alt="icon"></div>
-            <text class="followers">WEBSITE</text>
+          <div class="card instagram">
+            <div class="title"><img src="./src/images/icon-github.png" alt="icon"> Interior Design Site</div>
+            <div class="preview"> <a href="./sites/interiorDesign/index.html"><img src="./src/images/preview_interior.png" alt="icon"></a></div>
+            <text class="subtitle">WEBSITE</text>
           </div>
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Jewlery Shop</div>
-            <div class="preview"> <img src="./images/preview_jewlery.png" alt="icon"></div>
-            <text class="followers">ECOMMERCE SITE</text>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon">Plants Care Sercives</div>
-            <div class="preview"> <img src="./images/preview_plants.png" alt="icon"></div>
-            <text class="followers">SERVICES SITE</text>
-          </div>
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Fashion Agency</div>
-            <div class="preview"> <img src="./images/preview_fashion.png" alt="icon"></div>
-            <text class="followers">AGENCY SITE</text>
-          </div>
-        </div>
-      </div>
-      <div class="containerTop">
-        <div class="row">
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Time Tracking App</div>
-            <div class="preview"> <img src="./images/preview_14.png" alt="icon"></div>
-            <text class="followers">WEBAPP</text>
-          </div>
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Social Media Dashboard</div>
-            <div class="preview"> <img src="./images/preview_16.jpg" alt="icon"></div>
-            <text class="followers">DASHBOARD</text>
+          <div class="card instagram">
+            <div class="title"><img src="./src/images/icon-github.png" alt="icon"> Jewlery Shop</div>
+            <div class="preview"> <a href="./sites/jewelryShop/index.html"><img src="./src/images/preview_jewlery.png" alt="icon"></a></div>
+            <text class="subtitle">ECOMMERCE SITE</text>
           </div>
         </div>
         <div class="row">
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Add to Cart Feature</div>
-            <div class="preview"> <img src="./images/preview_5.jpeg" alt="icon"></div>
-            <text class="followers">ITEM</text>
+          <div class="card instagram">
+            <div class="title"><img src="./src/images/icon-github.png" alt="icon">Plants Care Sercives</div>
+            <div class="preview"> <a href="./sites/plantsServices/index.html"><img src="./src/images/preview_plants.png" alt="icon"></a></div>
+            <text class="subtitle">SERVICES SITE</text>
           </div>
-          <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> News Homepage</div>
-            <div class="preview"> <img src="./images/preview_13.png" alt="icon"></div>
-            <text class="followers">NEWSPAGE</text>
+          <div class="card instagram">
+            <div class="title"><img src="./src/images/icon-github.png" alt="icon"> Fashion Agency</div>
+            <div class="preview"> <a href="./sites/fashionAgency/index.html"><img src="./src/images/preview_fashion.png" alt="icon"></a></div>
+            <text class="subtitle">AGENCY SITE</text>
           </div>
         </div>
       </div>
       <div class="containerTop">
         <div class="row">
           <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> QR Card Component</div>
-            <div class="preview"> <img src="./images/preview_1.jpg" alt="icon"></div>
-            <text class="followers">COMPONENT</text>
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> Time Tracking App</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/14-time-tracking-dashboard/"><img src="./src/images/preview_14.png" alt="icon"></a></div>
+            <text class="subtitle">WEBAPP</text>
           </div>
           <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Blog Preview Card</div>
-            <div class="preview"> <img src="./images/preview_2.jpg" alt="icon"></div>
-            <text class="followers">PREVIEW</text>
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> Social Media Dashboard</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/16-social-media-dashboard-with-theme-switcher/"><img src="./src/images/preview_16.jpg" alt="icon"></a></div>
+            <text class="subtitle">DASHBOARD</text>
           </div>
         </div>
         <div class="row">
           <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> Social Links Profile</div>
-            <div class="preview"> <img src="./images/preview_3.jpg" alt="icon"></div>
-            <text class="followers">INDEX</text>
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> Add to Cart Feature</div>
+            <div class="preview"> <a href=""><img src="./src/images/preview_5.jpeg" alt="icon"></a></div>
+            <text class="subtitle">ITEM</text>
           </div>
           <div class="card blue">
-            <div class="username"><img src="./images/favicon-32x32.png" alt="icon"> NFT Preview</div>
-            <div class="preview"> <img src="./images/preview_9.jpg" alt="icon"></div>
-            <text class="followers">NFT</text>
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> News Homepage</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/13-news-homepage/"><img src="./src/images/preview_13.png" alt="icon"></a></div>
+            <text class="subtitle">NEWSPAGE</text>
+          </div>
+        </div>
+      </div>
+      <div class="containerTop">
+        <div class="row">
+          <div class="card blue">
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> QR Card Component</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/01-qr-code-component/"><img src="./src/images/preview_1.jpg" alt="icon"></a></div>
+            <text class="subtitle">COMPONENT</text>
+          </div>
+          <div class="card blue">
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> Blog Preview Card</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/02-blog-preview-card/"><img src="./src/images/preview_2.jpg" alt="icon"></a></div>
+            <text class="subtitle">PREVIEW</text>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card blue">
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> Social Links Profile</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/03-social-links-profile/"><img src="./src/images/preview_3.jpg" alt="icon"></a></div>
+            <text class="subtitle">INDEX</text>
+          </div>
+          <div class="card blue">
+            <div class="title"><img src="./src/images/favicon-32x32.png" alt="icon"> NFT Preview</div>
+            <div class="preview"> <a href="https://test-frontendmentor-projects.pages.dev/09-nft-preview-card-component/"><img src="./src/images/preview_9.jpg" alt="icon"></a></div>
+            <text class="subtitle">NFT</text>
           </div>
         </div>
       </div>
@@ -112,36 +114,36 @@
         <div class="bigRow">
           <div class="row">
             <div class="card" >
-              <div class="info"><text>Google Ads Apps</text><img src="./images/icon-google.svg" alt="icon"></div>
+              <div class="info"><text>Google Ads Apps</text><img src="./src/images/icon-google.svg" alt="icon"></div>
               <div class="values" >
                 <a href="https://skillshop.exceedlms.com/student/award/zKJHzMaUS4PS9deKMhTCrEUk?id=277115609">
-                  <img src="./images/certificate_1.png" alt="icon" >
+                  <img src="./src/images/certificate_1.png" alt="icon" >
                 </a>
              </div>
             </div>
             <div class="card" >
-              <div class="info"><text>Bitcoin101</text><img src="./images/icon-blockchaincouncil.svg" alt="icon"></div>
+              <div class="info"><text>Bitcoin101</text><img src="./src/images/icon-bccouncil.svg" alt="icon"></div>
               <div class="values">
                 <a href="https://www.credential.net/7b011d83-3994-4ef5-9326-0c1904195941">
-                  <img src="./images/certificate_2.png" alt="icon" >
+                  <img src="./src/images/certificate_2.png" alt="icon" >
                 </a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="card">
-              <div class="info"><text>Network Defense</text><img src="./images/icon-eccouncil.png" alt="icon"></div>
+              <div class="info"><text>Network Defense</text><img src="./src/images/icon-eccouncil.png" alt="icon"></div>
               <div class="values">
                 <a href="https://codered.eccouncil.org/certificate/595a000a-9b7b-4e3d-9399-bb2f03a87456">
-                  <img src="./images/certificate_3.png" alt="icon" >
+                  <img src="./src/images/certificate_3.png" alt="icon" >
                 </a>
               </div>
             </div>
             <div class="card">
-              <div class="info"><text>Digital Forensics</text><img src="./images/icon-eccouncil.png" alt="icon"></div>
+              <div class="info"><text>Digital Forensics</text><img src="./src/images/icon-eccouncil.png" alt="icon"></div>
               <div class="values">
                 <a href="https://codered.eccouncil.org/certificate/0e565d4d-12a8-4ba5-a9eb-7c4ee0913a70">
-                  <img src="./images/certificate_4.png" alt="icon" >
+                  <img src="./src/images/certificate_4.png" alt="icon" >
                 </a>
               </div>
             </div>
@@ -150,36 +152,36 @@
         <div class="bigRow">
           <div class="row">
             <div class="card">
-             <div class="info"><text>Diploma in Data Analytics</text><img src="./images/icon-elearning.png" alt="icon"></div>
+             <div class="info"><text>Diploma in Data Analytics</text><img src="./src/images/icon-elearning.png" alt="icon"></div>
               <div class="values">
                 <a href="https://www.linkedin.com/in/charlie-rios/details/certifications/1711731128232/single-media-viewer/?type=DOCUMENT&profileId=ACoAACSxPW8BiSbXrvOKN8pEP5dti-or4mgIDD0">
-                  <img src="./images/certificate_5.png" alt="icon" >
+                  <img src="./src/images/certificate_5.png" alt="icon" >
                 </a>
               </div>
            </div>
-            <div class="card">
-              <div class="info"><text>Blockchain Developer Training</text><img src="./images/icon-simplelearn.jpeg" alt="icon"></div>
-              <div class="values">
-                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI4OTgiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl80OTkyMTk5XzE3MTE2MzM4NzIucG5nIiwidXNlcm5hbWUiOiJDaGFybGllIFJpb3MgUHVqYWRvIn0%3D&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F3111%2FBlockchain-Certification-Training%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1362757859895180075&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVN8suTsnI8MjK8UyyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAOb3IYBBAAAA">
-                  <img src="./images/certificate_6.png" alt="icon" >
-                </a>
-              </div>
+           <div class="card">
+            <div class="info"><text>Oxford's Data Analytics</text><img src="./src/images/icon-oxford.svg" alt="icon"></div>
+            <div class="values">
+              <a href="https://www.linkedin.com/in/charlie-rios/details/certifications/183373074/multiple-media-viewer/?profileId=ACoAACSxPW8BiSbXrvOKN8pEP5dti-or4mgIDD0&treasuryMediaId=1711728186408&type=DOCUMENT">
+                <img src="./src/images/certificate_7.png" alt="icon" >
+              </a>
             </div>
+           </div>
           </div>
           <div class="row">
             <div class="card">
-              <div class="info"><text>Oxford's Data Analytics</text><img src="./images/icon-oxford.svg" alt="icon"></div>
+              <div class="info"><text>Blockchain Developer Training</text><img src="./src/images/icon-simplelearn.jpeg" alt="icon"></div>
               <div class="values">
-                <a href="https://www.linkedin.com/in/charlie-rios/details/certifications/183373074/multiple-media-viewer/?profileId=ACoAACSxPW8BiSbXrvOKN8pEP5dti-or4mgIDD0&treasuryMediaId=1711728186408&type=DOCUMENT">
-                  <img src="./images/certificate_7.png" alt="icon" >
+                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI4OTgiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl80OTkyMTk5XzE3MTE2MzM4NzIucG5nIiwidXNlcm5hbWUiOiJDaGFybGllIFJpb3MgUHVqYWRvIn0%3D&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F3111%2FBlockchain-Certification-Training%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1362757859895180075&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVN8suTsnI8MjK8UyyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAOb3IYBBAAAA">
+                  <img src="./src/images/certificate_6.png" alt="icon" >
                 </a>
               </div>
             </div>
             <div class="card">
-              <div class="info"><text>Introduction to MERN Stack</text><img src="./images/icon-simplelearn.jpeg" alt="icon"></div>
+              <div class="info"><text>Introduction to MERN Stack</text><img src="./src/images/icon-simplelearn.jpeg" alt="icon"></div>
               <div class="values">
                 <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMzM3IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNDk5MzM2NF8xNzExNjU1MjUxLnBuZyIsInVzZXJuYW1lIjoiQ2hhcmxpZSBSaW9zIFB1amFkbyJ9&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F6129%2FIntroduction-to-MERN-Stack%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1362757859895180075&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVd09xdqkqMc%2FK8UyyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAGRdloVBAAAA">
-                  <img src="./images/certificate_8.png" alt="icon" >
+                  <img src="./src/images/certificate_8.png" alt="icon" >
                 </a>
               </div>
             </div>
