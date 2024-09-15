@@ -160,6 +160,26 @@ hr{
 .redd{
     border-top: 5px solid var(--Red);
 }
+#foldable1{
+    display: none;
+}
+#foldable2{
+    display: none;
+}
+
+.showMore{
+    width: auto;
+    height: auto;
+    color: var(--text);
+    border-radius: 20px;
+    padding: 2%;
+    padding-inline: 10%;
+    background-color: var(--card_bg);
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    margin-top: 30px;
+}
 .containerTop .row .card{  
     align-items: center;
     justify-content: space-between;
@@ -243,6 +263,7 @@ hr{
 }
 .bigRow .row .card{
     gap: 30px;
+    overflow: visible;
 }
 .card .info{
     display: flex;
@@ -258,7 +279,7 @@ hr{
     max-height: 30px;
 }
 .card .values{
-    display: flex;
+    display: none;
     max-width: 100%;
     align-items: baseline;
     justify-content: space-between;
@@ -309,5 +330,6 @@ hr{
     .bigRow{
         gap: 20px;
         display: flex;
+        justify-content: first baseline;
     }
 }
