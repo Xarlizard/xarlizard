@@ -180,6 +180,13 @@ hr{
     place-self: center;
     margin-top: 30px;
 }
+.showMore:hover{
+    cursor: pointer;
+    background-color: var(--card_bg_hover);
+}
+.showMore:active{
+    background-color: var(--card_bg);
+}
 .containerTop .row .card{  
     align-items: center;
     justify-content: space-between;
@@ -263,7 +270,6 @@ hr{
 }
 .bigRow .row .card{
     gap: 30px;
-    overflow: visible;
 }
 .card .info{
     display: flex;

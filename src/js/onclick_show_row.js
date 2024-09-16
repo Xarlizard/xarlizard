@@ -1,9 +1,18 @@
+var c = 0; //iteration counter
+var foldable1 = document.getElementById('foldable1');
+var foldable2 = document.getElementById('foldable2');
+var showMore = document.getElementById('showMore');
 function show_row() {
     var foldable1 = document.getElementById('foldable1');
-    var foldable2 = document.getElementsByClassName('.foldable1')[0];
-    if (foldable1.style.display === "none") {
-      foldable1.style.display = "block";
-    } else {
-      foldable2.style.display = "block";
-    } document
+    var foldable2 = document.getElementById('foldable2');
+    var showMore = document.getElementById('showMore');
+
+    if (c == 0) {
+      foldable1.style.display = "flex";
+      c++;  
+    } else if (c == 1) {
+      foldable2.style.display = "flex";
+      showMore.style.display = "none"
+      c++;
+    }
   }
