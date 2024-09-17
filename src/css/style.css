@@ -89,6 +89,7 @@ header{
     max-width: 1200px;
     flex-direction: column;
 }
+
 .avatar img{
     max-width: 90px;
     border-radius: 50%;}
@@ -168,24 +169,28 @@ hr{
 }
 
 .showMore{
+    padding: 2%;
     width: auto;
     height: auto;
+    display: flex;
+    margin-top: 30px;
+    place-self: center;
     color: var(--text);
     border-radius: 20px;
-    padding: 2%;
     padding-inline: 10%;
-    background-color: var(--card_bg);
-    display: flex;
     flex-direction: column;
-    place-self: center;
-    margin-top: 30px;
+    background-color: var(--card_bg);
+    h2{ 
+        font-weight: 700;
+    }
 }
 .showMore:hover{
     cursor: pointer;
-    background-color: var(--card_bg_hover);
+    color: var(--card_bg_hover);
+    background-color: var(--card_bg);
 }
 .showMore:active{
-    background-color: var(--card_bg);
+    color: var(--text2);
 }
 .containerTop .row .card{  
     align-items: center;
