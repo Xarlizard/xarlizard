@@ -192,6 +192,30 @@ hr{
 .showMore:active{
     color: var(--text2);
 }
+.showLess{
+    padding: 2%;
+    width: auto;
+    height: auto;
+    display: none;
+    margin-top: 30px;
+    place-self: center;
+    color: var(--text);
+    border-radius: 20px;
+    padding-inline: 10%;
+    flex-direction: column;
+    background-color: var(--card_bg);
+    h2{ 
+        font-weight: 700;
+    }
+}
+.showLess:hover{
+    cursor: pointer;
+    color: var(--card_bg_hover);
+    background-color: var(--card_bg);
+}
+.showLess:active{
+    color: var(--text2);
+}
 .containerTop .row .card{  
     align-items: center;
     justify-content: space-between;

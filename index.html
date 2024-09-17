@@ -29,7 +29,7 @@
     </div>
     <script src="./src/js/toggle_theme.js"></script>
     <script src="./src/js/onclick_show_img.js"></script>
-    <script src="./src/js/onclick_show_row.js"></script>
+    <script src="./src/js/onclick_row_toggle.js"></script>
   </header>
   <main>
     <div class="container">
@@ -113,8 +113,11 @@
           </div>
         </div>
       </div>
-      <div class="showMore" id="showMore" onclick="show_row()">
+      <div class="showMore" id="showMore" onclick="toggle_row()">
         <div><h2>SHOW MORE</h2></div>
+      </div>
+      <div class="showLess" id="showLess" onclick="toggle_row()">
+        <div><h2>SHOW LESS</h2></div>
       </div>
       <text class="overview">Certificates & Diplomas</text>
       <div class="containerBottom">-
