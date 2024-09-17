@@ -186,11 +186,12 @@ hr{
 }
 .showMore:hover{
     cursor: pointer;
-    color: var(--card_bg_hover);
+    color: var(--Lime_Green);
     background-color: var(--card_bg);
 }
 .showMore:active{
-    color: var(--text2);
+    color: var(--card_bg);
+    background-color: var(--card_bg_hover);
 }
 .showLess{
     padding: 2%;
@@ -210,11 +211,12 @@ hr{
 }
 .showLess:hover{
     cursor: pointer;
-    color: var(--card_bg_hover);
+    color: var(--Red);
     background-color: var(--card_bg);
 }
 .showLess:active{
-    color: var(--text2);
+    color: var(--card_bg);
+    background-color: var(--card_bg_hover);
 }
 .containerTop .row .card{  
     align-items: center;
