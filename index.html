@@ -13,9 +13,9 @@
 <body>
   <header>
     <div class="topHeader">
-      <div class="avatar"><img src="./src/images/avatar_img.jpeg"></div>
-      <a class="linklist" href="https://www.linkedin.com/in/charlie-rios/" target="_blank"><img src="./src/images/icon-linkedin_red.png" ></a>
-      <a class="linklist" href="https://github.com/xarlizard" target="_blank"><img src="./src/images/icon-github_red.png"></a>
+      <div class="avatar" onclick="openLink('https://www.charlie.icu/CV/')"><img src="./src/images/avatar_img.jpeg"></div>
+      <div class="linklist" onclick='openLink("https://www.linkedin.com/in/charlie-rios/")'><img src="./src/images/icon-linkedin_red.png" ></div>
+      <div class="linklist" onclick='openLink("https://github.com/xarlizard")'><img src="./src/images/icon-github_red.png"></div>
       <div class="headerInfo">
         <h1>Charlie - @xarlizard</h1>
         <text class="headerText">Fullstack Web 3.0 Developer & UI/UX Designer</text>
@@ -30,6 +30,11 @@
     </div>
     <script src="./src/js/toggle_theme.js"></script>
     <script src="./src/js/onclick_row_toggle.js"></script>
+    <script>
+      function openLink(link) {
+        window.open(link);
+      }
+      </script>
   </header>
   <main>
     <div class="container">
