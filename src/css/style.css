@@ -93,7 +93,7 @@ header{
 .avatar img{
     max-width: 90px;
     border-radius: 50%;
-    transition: .5s ease;
+    transition: .8s ease;
 }
 .avatar:hover img{
     opacity: 0.3;
