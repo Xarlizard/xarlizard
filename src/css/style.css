@@ -316,7 +316,7 @@ hr{
     max-height: 30px;
 }
 .card .values{
-    display: none;
+    display: block;
     max-width: 100%;
     align-items: baseline;
     justify-content: space-between;
