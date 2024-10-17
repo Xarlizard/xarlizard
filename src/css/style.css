@@ -251,6 +251,22 @@ hr{
     color: var(--card_bg);
     background-color: var(--card_bg_hover);
 }
+.containerGrid{
+    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+.grid-item{
+    max-width: 50px;
+}
+.grid-item img{
+    width: 100%;
+}
 .containerTop .row .card{  
     align-items: center;
     justify-content: space-between;
