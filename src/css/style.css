@@ -89,42 +89,6 @@ header{
     max-width: 1200px;
     flex-direction: column;
 }
-
-.avatar img{
-    max-width: 90px;
-    border-radius: 50%;
-    transition: .8s ease;
-}
-.avatar:hover{
-    opacity: 1;
-    cursor: pointer;
-    background-image: url('../images/icon-cv.png');
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    img{
-        opacity: 0.3;
-        background-position: center;
-    }
-}
-.linklist img{
-    max-width: 90px;
-    border-radius: 50%;
-    transition: .8s ease;
-}
-.linklist:hover{
-    opacity: 1;
-    cursor: pointer;
-    background-image: url('../images/icon-link.png');
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    img{
-        transition: .8s ease;
-        background-position: center;
-        opacity: 0.4;
-    }
-}
 .topHeader{
     display: flex;
     gap: 10px;
@@ -145,6 +109,43 @@ hr{
     margin-top: 10px;
     margin-bottom: 10px;
     border:0.5px solid var(--text);
+}
+
+.avatar img{
+    max-width: 110px;
+    border-radius: 50%;
+    transition: .8s ease;
+}
+.avatar:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-image: url('../images/icon-cv.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    img{
+        opacity: 0.3;
+        background-position: center;
+    }
+}
+.linklist img{
+    max-width: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: .8s ease;
+}
+.linklist:hover{
+    opacity: 1;
+    cursor: pointer;
+    img{
+        transition: .8s ease;
+        background-position: center;
+        opacity: 0.4;
+    }
+}
+.headerLinks{
+    display: flex;
+    flex-direction: row;
 }
 .bottomHeader{
     display: flex;
