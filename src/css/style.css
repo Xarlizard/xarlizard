@@ -110,11 +110,14 @@ hr{
     margin-bottom: 10px;
     border:0.5px solid var(--text);
 }
-
+.avatar{
+    margin-right: 20px;
+}
 .avatar img{
     max-width: 110px;
     border-radius: 50%;
     transition: .8s ease;
+    box-shadow: 0 0 50px 15px var(--text);
 }
 .avatar:hover{
     opacity: 1;
@@ -141,6 +144,7 @@ hr{
         transition: .8s ease;
         background-position: center;
         opacity: 0.4;
+        box-shadow: 0 0 50px 1px var(--text);
     }
 }
 .headerLinks{
@@ -314,6 +318,7 @@ hr{
 .card:hover{
     cursor: pointer;
     background-color: var(--card_bg_hover);
+    box-shadow: 0 0 50px 1px var(--text);
 }
 .subtitle{
     letter-spacing: 5px;
