@@ -258,6 +258,7 @@ hr{
     cursor: pointer;
     background-color: var(--card_bg_hover);
     box-shadow: 0 0 50px 1px var(--text);
+    color: var(--text2);
 }
 .subtitle{
     letter-spacing: 5px;
