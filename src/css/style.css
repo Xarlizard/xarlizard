@@ -7,26 +7,7 @@
     --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --Red: hsl(348, 97%, 39%);
 }
-.theme-light {
-    --bg: hsl(0, 0%, 100%);
-    --top_bg_pattern: hsl(225, 100%, 98%);
-    --card_bg: hsl(227, 47%, 96%);
-    --card_bg_hover: hsl(223, 11%, 87%);
-    --text: hsl(228, 12%, 44%);
-    --text2: hsl(230, 17%, 14%);
-    --slider_color: linear-gradient(hsl(230, 22%, 74%), hsl(230, 22%, 74%));
-    --inverted_slider: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-}
-.theme-dark {
-    --bg: hsl(230, 17%, 14%);
-    --top_bg_pattern: hsl(232, 19%, 15%);
-    --card_bg: hsl(228, 28%, 20%);
-    --card_bg_hover: hsl(230, 21%, 29%);
-    --text: hsl(228, 34%, 66%);
-    --text2: hsl(0, 0%, 100%);
-    --slider_color: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-    --inverted_slider:linear-gradient(hsl(230, 22%, 74%), hsl(230, 22%, 74%));
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,49 +15,7 @@
     font-weight: 400;
     font-family: 'Inter';
 }
-.switch {
-    width: 60px;
-    height: 34px;
-    position: relative;
-    display: inline-block;
-}
-.switch input { 
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
-.slider {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 34px; 
-    background-image: var(--slider_color);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    border-radius: 50%; 
-    background-color: var(--bg);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-input:focus + .slider { box-shadow: 0 0 1px hsl(230, 22%, 74%);}
-.slider:hover{background-image: var(--inverted_slider);}
-input:focus + .slider:hover {background-image: var(--inverted_slider);}
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
+
 body{
     padding: 20px;
     color: var(--text);

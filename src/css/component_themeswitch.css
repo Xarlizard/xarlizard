@@ -1,0 +1,44 @@
+/* Component for Theme Switch */
+.switch {
+    width: 60px;
+    height: 34px;
+    position: relative;
+    display: inline-block;
+}
+.switch input { 
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 34px; 
+    background-image: var(--slider_color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%; 
+    background-color: var(--bg);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:focus + .slider { box-shadow: 0 0 1px hsl(230, 22%, 74%);}
+.slider:hover{background-image: var(--inverted_slider);}
+input:focus + .slider:hover {background-image: var(--inverted_slider);}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

@@ -7,10 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--CSS THEMES & COMPONENTS FILES are critical-->
+  <link rel="stylesheet" href="./src/css/colors_themes.css">
+  <link rel="stylesheet" href="./src/css/component_themeswitch.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <title>Portfolio</title>
 </head>
 <body>
+  
+  <div class="sticky"></div>
   <header>
     <div class="topHeader">
       <div class="avatar" onclick="openLink('https://www.charlie.icu/CV/')"><img src="./src/images/avatar_img.jpeg"></div>
@@ -21,6 +26,8 @@
           <div class="linklist" onclick='openLink("https://www.linkedin.com/in/charlie-rios/")'><img src="./src/images/icon-linkedin_red.png" ></div>
           <div class="linklist" onclick='openLink("https://github.com/xarlizard")'><img src="./src/images/icon-github_red.png"></div> 
           <div class="linklist" onclick='openLink("https://github.com/xarlizard")'><img src="./src/images/icon-mail.png"></div> 
+          <div class="linklist" onclick='openLink("https://www.charlie.icu/CV/")'><img src="./src/images/icon-es.png"></div> 
+          <div class="linklist" onclick='openLink("https://www.charlie.icu/CV/")'><img src="./src/images/icon-en.png"></div> 
         </div>
       </div>
     </div>
@@ -127,6 +134,7 @@
       <div class="showLess" id="showLess" onclick="toggle_row()">
         <div><h2>SHOW LESS</h2></div>
       </div>
+      <!-- Component for containing a grid of badges-->
       <div class="containerGrid">
         <div class="grid-item"> <img src="./src/images/icon-html5.png"> </div>
         <div class="grid-item"> <img src="./src/images/icon-css.png"> </div>
