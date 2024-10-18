@@ -221,6 +221,7 @@ hr{
     justify-content: space-between;
 }
 .row .card{
+    transition: 1s;
     flex: 1 1 0;
     display: flex;
     padding: 20px;
@@ -266,6 +267,7 @@ hr{
     box-shadow: 0 0 50px 1px var(--text);
     color: var(--text2);
     margin-top: -10px;
+    transition: 1s;
 }
 .subtitle{
     letter-spacing: 5px;
