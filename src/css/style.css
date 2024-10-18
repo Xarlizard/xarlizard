@@ -71,7 +71,7 @@ hr{
     }
 }
 .linklist{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 .linklist img{
@@ -211,9 +211,19 @@ hr{
 }
 .grid-item{
     max-width: 50px;
+    transition: 1s;
+}
+.grid-item:hover{
+    margin-top: -20px;
+    transition: 1s;
+    img{
+        width: 110%;
+        filter: drop-shadow(10px 30px 8px var(--text));
+    }
 }
 .grid-item img{
     width: 100%;
+    transition: 1s;
     filter: drop-shadow(10px 10px 4px var(--text));
 }
 .containerTop .row .card{  
