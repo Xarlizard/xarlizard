@@ -108,13 +108,16 @@ fetchServer.addEventListener("click", () => {
           buttonContainer.style.transform = 'scale(1)';
         })
         .catch((error) => {
+          //A proper error router is needed, for now we output through the console
           console.log(error);
+          console.log("Error fetching from server, please enter a valid API Key");
+          console.log("(If you are seeing CORS error message above, it means the API key was invalid or that the conexion to the server timed out)");
           //When the API_KEY is not valid, we enable GET button again
           document.getElementById("fetchServer").style.display = "inline-flex";
           document.getElementById("buttonload").style.display = "none";
         });
     }else{
         //Promp a warning indicating wrong input length/type
-        
+        console.log("Invalid API key length (expected: 30)");
     }
 });
