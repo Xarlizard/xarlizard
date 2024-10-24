@@ -1,0 +1,62 @@
+/*Responsive page, has two sizes for desktop or phone devices (just to show off how the streamhatchet header webcomponent resizes)*/
+body {
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', Arial;
+    font-size: 22px;
+}
+.container{
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.containerr {
+    width: 80%;
+    margin: 8em auto;
+}
+
+.chart-container {
+    min-width: 300px;
+}
+
+#myChart {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#buttonContainer{
+    transform: scale(0);
+    margin: auto;
+}
+
+button{
+    margin: auto 0;
+    height: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#getRequestContainer button{
+    height: 20px;
+}
+
+#buttonload {
+    display: none;
+}
+
+/* Specifications for desktop screen size*/
+@media only screen and (min-width:800px) {
+    body {
+        margin-top: 80px;
+    }
+}

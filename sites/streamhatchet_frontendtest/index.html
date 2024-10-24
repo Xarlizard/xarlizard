@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo StreamHatchet</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!--THIS ENTIRE PAGE SERVES AS THE TECHNICAL TEST REQUIRED FOR AN INTERVIEW AIMING TO JOIN STREAMHATCHET TEAM.
+    TO CORRECTLY USE/SEE THIS PAGE CONTENT, A VALID API MUST BE PROVIDED.-->
+<body>
+
+    <header>
+        <!--Custom webcomponent element for the header-->
+        <header-streamhatchet></header-streamhatchet>
+    </header>
+
+    <div class="container" id="getRequestContainer">
+        <p>API Key:
+        <!--Custom webcomponent element for a clickable popup that displays relevant info for the user-->
+        <popup-notify>
+            <span slot="popupText">
+                -Input your 30-characters API_KEY
+                <br>
+                (Used for GET server request through Axios method, doesn't get stored)
+            </span>
+        </popup-notify>
+        <input type="text" id="apiInput" value="">
+        <!--This button calls for axios get request with above's given input value field, making this static page secure to load on a public repository without compromising any keys/secrets-->
+        <button id="fetchServer">Send Api Request</button>
+        <button id="buttonload">
+            <i class="fa fa-circle-o-notch fa-spin"></i>Waiting for server
+          </button>
+        </p>
+    </div>
+    <div class="container">
+        <!--We use chart.js library to create custom charts for StreamHatchet API data through the "canvas" HTML element-->
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <!-- A div containing all the buttons, remains hidden until data is fetched from server and is secure to push buttons-->
+    <div id="buttonContainer">
+        <button id="airtimeHours">Airtime hours</button>
+        <button id="maxRank">Max Rank</button>
+        <button id="averageViewers">Average Viewers</button>
+        <button id="averageChannels">Average Channels</button>
+    </div>
+
+    <!--Script for Axios Fetching and creating the desired Chart with the library chart.js that was previsously lodaded on the page-->
+    <script src="./js/main.js"></script>    
+    <!--Custom webcomponent file reference for the header-->
+    <script src="./js/popupNotify.js"></script>
+    <script src="js/header-streamhatchet.js"></script>
+</body>
+</html>
