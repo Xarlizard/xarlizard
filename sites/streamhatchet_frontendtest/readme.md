@@ -1,6 +1,12 @@
 This repository folder contains the frontend project that I've submitted to the 45 minutes long technical test / interview for the role FrontEnd & UI/UX Developer.
 
- You can see it here: https://www.charlie.icu/sites/streamhatchet_frontendtest/index.html
+ You can see it on here: 
+
+    https://www.charlie.icu/sites/streamhatchet_frontendtest/
+
+    https://xarlizard.pages.dev/sites/streamhatchet_frontendtest/
+
+    https://xarlizard.github.io/xarlizard/sites/streamhatchet_frontendtest
 
 Languages used: Javascript, CSS, HTML
 
