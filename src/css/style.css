@@ -30,8 +30,8 @@ header{
 }
 .topHeader{
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    flex-direction: row;
     align-items: center;
 }
 .topHeader h1{
@@ -350,6 +350,9 @@ hr{
     header{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .topHeader{
+        flex-direction: row;
     }
     .topHeader h1{
         font-size: 33px;
