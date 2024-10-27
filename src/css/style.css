@@ -99,7 +99,9 @@ hr{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 .bottomHeader text{
     font-weight: 700;
