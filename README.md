@@ -18,12 +18,13 @@ class Attributes(Xarlizard):
 	@staticmethod
 	def coding() -> tuple:
 		langs = {
-			'frontend':   ['html', 'javascript', 'css', 'react', 'vuejs', 'angular', 'reactnative', 'nextjs'],
-			'backend': ['node', 'python', 'java', 'php', 'cloudflare workers', 'github actions'],
-			'other': ['sql', 'solidity', 'wordpress', 'prestashop', 'shopify', 'excel']
+			'front end': ['html', 'javascript', 'css', 'react', 'vuejs', 'reactnative', 'nextjs'],
+			'back  end': ['node', 'python', 'java', 'php', 'cloudflare workers', 'github actions'],
+			'libraries': ['axios', 'mongoose', 'express', 'chartjs', 'treejs', 'webgl', 'ethereum'],
+			'other'    : ['sql', 'solidity', 'git', 'cli', 'wordpress', 'prestashop', 'shopify', 'excel']
 		}
-		specialities  = ['SysAdmin', 'Fullstack', 'Blockchain', 'UI/UX Design']
-		environnement = ['vscode', 'cloudflare', 'git', 'Windows', 'Linux', 'MacOS']
+		specialities  = ['Responsive Frontend', 'Blockchain', 'UI/UX Responsive Design', 'SysAdmin']
+		environnement = ['vscode', 'vercel', 'fly.io', 'mongoDB' 'cloudflare', 'github', 'Windows', 'Linux', 'MacOS']
 		
 		return langs, specialities, environnement
 		
