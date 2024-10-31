@@ -1,29 +1,29 @@
 ```python
-class Attributes(Xarlyzard):
+class Attributes(Xarlizard):
 	@staticmethod
 	def contact() -> tuple:
 	    discord  = "xarlizard"
-	    twitter = "@Xarlizard"
+	    twitter  = "@Xarlizard"
+ 	    linkedin = "charlie-rios"
 	    
-	    return discord, twitter
+	    return discord, twitter, linkedin
 	
 	@staticmethod
 	def life() -> tuple:
-		langs         = ['Catalan', 'Spanish', 'English']
-		nationalities = self.langs.remove('Catalan', 'English')
-		age           = 25
+		langs         = ['Catalan', 'Spanish', 'English', 'Italian', 'Japanese']
+		nationalities = ['Spaniard', 'Estonian']
 		
-		return langs, nationalities, age
+		return langs, nationalities
 	
 	@staticmethod
 	def coding() -> tuple:
 		langs = {
-			'expert':   ['js', 'html', 'css'],
-			'intermediate': ['solidity', 'java', 'python'],
-			'learning': ['c', 'c++', 'c#', 'django', 'go']
+			'frontend':   ['html', 'javascript', 'css', 'react', 'vuejs', 'angular', 'reactnative', 'nextjs'],
+			'backend': ['node', 'python', 'java', 'php', 'cloudflare workers', 'github actions'],
+			'other': ['sql', 'solidity', 'wordpress', 'prestashop', 'shopify', 'excel']
 		}
-		specialities  = ['SysAdmin', 'Fullstack', 'Blockchain']
-		environnement = ['vscode', 'pycharm', 'Linux']
+		specialities  = ['SysAdmin', 'Fullstack', 'Blockchain', 'UI/UX Design']
+		environnement = ['vscode', 'cloudflare', 'git', 'Windows', 'Linux', 'MacOS']
 		
 		return langs, specialities, environnement
 		
