@@ -3,8 +3,8 @@ class Attributes(Xarlizard):
 	@staticmethod
 	def contact() -> tuple:
 	    discord  = "xarlizard"
-	    twitter  = "@Xarlizard"
- 	    linkedin = "charlie-rios"
+	    twitter  = "@xarlizard"
+	    portfolio= "https://charlie.icu"
 	    
 	    return discord, twitter, linkedin
 	
