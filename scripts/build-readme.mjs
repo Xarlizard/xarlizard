@@ -110,6 +110,25 @@ function renderAbout(t) {
 function renderFeatured(t) {
   return `<h2 align="center"><b>${t.featured_title}</b></h2>
 
+<img src="https://raw.githubusercontent.com/cook-gpt/cook-gpt/main/.github/icon-cropped.png" width="200" alt="CookGPT" align="left"/>
+<a href="https://apps.apple.com/app/id6805535867"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" width="175" alt="${t.download_ios_alt}" align="right"/></a>
+
+<div>
+<h3><a href="https://github.com/cook-gpt/cook-gpt">CookGPT - Gourmet Plan & Track</a></h3>
+<p>
+<img src="https://img.shields.io/badge/Swift-F54A2A?style=flat&logo=swift&logoColor=white" alt="Swift"/>
+<img src="https://img.shields.io/badge/SwiftUI-native-FA7343?style=flat&logo=swift&logoColor=white" alt="SwiftUI"/>
+<img src="https://img.shields.io/badge/iOS%20%26%20iPadOS-000000?style=flat&logo=apple&logoColor=white" alt="iOS and iPadOS"/>
+</p>
+<p>${t.cook_gpt_desc}</p>
+<p>
+<a href="https://cook-gpt.pages.dev/"><img src="${landingPageBadge(t)}" alt="${t.landing_page_label}"/></a>
+<a href="https://github.com/cook-gpt/cook-gpt"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
+</div>
+
+<br/><br/>
+
 <img src="https://raw.githubusercontent.com/token-bar/token-bar/main/.github/icon-cropped.png" width="200" alt="Token Bar" align="left"/>
 <a href="https://github.com/token-bar/token-bar/releases"><img src="https://raw.githubusercontent.com/token-bar/token-bar/main/.github/macos_badge_noborder.png" width="175" alt="${t.download_mac_alt}" align="right"/></a>
 
