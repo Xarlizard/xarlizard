@@ -58,7 +58,7 @@
 <a href="https://apps.apple.com/app/id6805535867"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" width="175" alt="在 App Store 下载" align="right"/></a>
 
 <div>
-<h3><a href="https://github.com/cook-gpt/cook-gpt">CookGPT - Gourmet Plan & Track</a></h3>
+<h3><a href="https://github.com/cook-gpt/cook-gpt">CookGPT - Gourmet Plan & Taste</a></h3>
 <p>
 <img src="https://img.shields.io/badge/Swift-F54A2A?style=flat&logo=swift&logoColor=white" alt="Swift"/>
 <img src="https://img.shields.io/badge/SwiftUI-native-FA7343?style=flat&logo=swift&logoColor=white" alt="SwiftUI"/>
