@@ -179,7 +179,7 @@ function renderFeatured(t) {
 </p>
 <p>${t.dropafile_desc}</p>
 <p>
-<a href="https://dropafile.app-org-es.workers.dev/"><img src="${liveDemoBadge(t)}" alt="${t.live_demo_label}"/></a>
+<a href="https://dropafile.xarlizard.workers.dev/"><img src="${liveDemoBadge(t)}" alt="${t.live_demo_label}"/></a>
 <a href="https://github.com/dropafile/dropafile"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 </div>
